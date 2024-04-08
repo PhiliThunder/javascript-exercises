@@ -1,8 +1,9 @@
-const removeFromArray = function(array, remove, remove2, remove3, remove4) {
-    return array.filter(item => item !== remove 
-        && item !== remove2 
-        && item !== remove3 
-        && item !== remove4);
+const removeFromArray = function(array, ...remove) {
+    let filteredArray = array;
+    for (const value of remove) {
+        filteredArray = filteredArray.filter(item => item !== value);
+    }
+    return filteredArray;
 };
 
 // Do not edit below this line
