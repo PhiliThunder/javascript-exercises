@@ -20,7 +20,7 @@ const power = function(base, power) {
 
 const factorial = function(num) {
   if (num == 0) {return 1};
-	for (let i = num - 1; i > 0; i--) {
+	for (let i = num - 1; i > 0; i--) { //Could have added a result variable and made it a bit nicer
     num = num * i;
   }
   return num
